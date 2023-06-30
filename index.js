@@ -2,19 +2,14 @@
     // Write your algorithm here  
     for(let i = 0; i < array.length; i++) {
       const lookLike = target - array[i];
-      for(let j = i + 1; j < array.length; j++){
+      for(let j = i + 1; j < array.length; j++)
         //compair whether the 'look' matches any of the remaining index values.
-        console.log(array.length)
-        console.log(target)
-        console.log(array[i])
-        console.log(lookLike)
+        
         if (array[j] === lookLike)return true;
       }
     
         return false
-    }
-  }
-  hasTargetSum([22, 19, 4, 6, 30], 25)
+  }hasTargetSum([22, 19, 4, 6, 30], 25)
     //find a way to add each of the arrays together in order to give the value of the target.
     //Or look for the value that remains after the subtraction of the target and a certain index
 
